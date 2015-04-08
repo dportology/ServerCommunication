@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/show_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Location"
+        android:layout_alignBaseline="@+id/logoff"
+        android:layout_alignBottom="@+id/logoff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/create_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:layout_alignBaseline="@+id/show_location"
+        android:layout_alignBottom="@+id/show_location"
+        android:layout_toRightOf="@+id/show_location"
+        android:layout_toEndOf="@+id/show_location" />
+    <Button
+        android:id="@+id/update_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Location"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_above="@+id/logoff"
+        android:layout_alignRight="@+id/create_user"
+        android:layout_alignEnd="@+id/create_user" />
+    <Button
+        android:id="@+id/logoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Off"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/update_location"
+        android:layout_toEndOf="@+id/update_location" />
+
+</RelativeLayout>
